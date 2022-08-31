@@ -57,3 +57,50 @@
 #countdown-form input[type="text"]:focus{
   outline: 2px solid #000;
 }
+@media (prefers-color-scheme: dark){
+  *::placeholder{
+    color: #fff;
+  }
+  body{
+    background: #000;
+    color: #fff;
+  }
+#countdown-hours,
+#countdown-minutes,
+#countdown-seconds{
+  border: 1px solid #fff;
+}
+#countdown-form input[type="text"]{
+  color: #fff;
+  outline: 1px solid #fff;
+  background: transparent;
+  }
+#countdown-form input[type="submit"]{
+  background: #fff;
+  color: #000
+}
+#countdown-form input[type="text"]:focus{
+  outline: 2px solid #fff;
+}
+
+@media (prefers-color-scheme: light){
+  *::placeholder{
+      color: #000;
+    }
+  body{
+    background: #fff;
+    color: #000;
+  }
+  #countdown-hours,
+  #countdown-minutes,
+  #countdown-seconds{
+   border: 1px solid #fff;
+    }
+#countdown-form input[type="text"]{
+  color: #000;
+  outline: 1px solid #000;
+  background: transparent;
+  }
+
+  }
+}
